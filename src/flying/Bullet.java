@@ -1,14 +1,15 @@
 package flying;
 
+import java.io.*;
+import javax.imageio.ImageIO;
+
 public class Bullet extends FlyingObject{
 	private int speed = 3;
-	private String path;
-	
 	public Bullet(int x, int y)
 	{
 		this.x = x;
 		this.y = y;
-		this.path = 
+		this.image = ShootGame.bullet;
 	}
 	
 	public boolean outofBound() 
